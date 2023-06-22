@@ -45,7 +45,7 @@ class YamlConfigFileDefaultProviderTest {
     commandLine.setDefaultValueProvider(new YamlConfigFileDefaultProvider(commandLine, configFile));
 
     final String cmdArgs =
-        removeFieldFrom(validBaseCommandOptions(), "http-listen-port", "key-store-path");
+        removeFieldFrom(validBaseCommandOptions(), "http-listen-port", "key-config-path");
     final String[] args = cmdArgs.split(" ");
     commandLine.parseArgs(args);
 
